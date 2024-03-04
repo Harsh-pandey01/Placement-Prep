@@ -1,1 +1,1 @@
-".vscode" , ".output"
+.vscode , output ,**/*.exe
