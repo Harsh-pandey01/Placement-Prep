@@ -1,0 +1,20 @@
+What is oops ?
+ans:- It is a programming techinque which revolves around the 'classes' and 'objects'. For real world application
+
+What is Object ?
+It is an entity having some state/properties and behaviour .  
+
+
+-- Size of the object is always equal to the data members size of the class .
+ If the class is empty then the size will be 1Byte to keep the track of
+the object
+
+-- Access modifiers :- They are responsible for the scope of the data members
+ means where a data member can be accessed
+1.Public :-Can be accessed anywhere
+2.Private :- Can be accesses only in the class
+3.Private :-
+
+--Getters and setters :-When any data member is set to private and we want
+ to access that data member then we use getters and setter .They are simple
+methods to set and get the private data
