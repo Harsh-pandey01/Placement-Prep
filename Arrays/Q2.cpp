@@ -1,36 +1,31 @@
-// Find the maximum and minimum element in an array
+// SECOND LARGEST NUMBER IN AN ARRAY
 
-// Approach is very simple we can triverse the array and can find the element easily
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std ;
 
 int main(){
 
-int size ;
-cout<<"Enter the size"<<endl ;
-cin >> size ;
+vector<int>v = {1,4,5,7,8,9,4,5,7,8,41,5,6} ;
 
-int arr[size] = {0};
-cout<<"Enter the elements of the array"<<endl ;
-for(int i = 0; i < size ; i++){
-    cin >> arr[i];
-}
+// Approach 1 :-
+/*Sort the vector and try to find the second largest element*/
+// Approach 2 :- Optimised
+/*Kepp the track of the largest and second largest number*/
 
-int maxi = INT_MIN ;
-int mini = INT_MAX ;
+int largest = v[0] ;
+int ans = v[0] ;
 
-
-
-for(int i = 0; i < size ; i++){
-    if(arr[i]<mini){
-        mini = arr[i];
+for(int i = 0 ; i < v.size(); i++){
+    if(v[i] > largest){
+        ans = largest ;
+        largest = v[i];
     }
-    if(arr[i]>maxi){
-         maxi = arr[i];
+
+    if(v[i] < largest && v[i] > ans){
+        ans = v[i];
     }
 }
 
-cout<<"minimum and maximum are"<<mini<<" "<<maxi ;
-
+cout << "The second largest is "<<ans << endl ; 
     return 0 ;
 }

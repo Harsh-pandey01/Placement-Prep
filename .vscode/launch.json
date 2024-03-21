@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/HP/Desktop/Placement-Prep/OOPS",
-      "program": "c:/Users/HP/Desktop/Placement-Prep/OOPS/build/Debug/outDebug",
+      "cwd": "c:/Users/HP/Desktop/Placement-Prep/OOPS/inheritanceType",
+      "program": "c:/Users/HP/Desktop/Placement-Prep/OOPS/inheritanceType/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

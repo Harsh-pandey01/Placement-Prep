@@ -1,32 +1,31 @@
-// Move all the negative elements to one side of the array
+// LEFT ROTATE THE ARRAY BY ONE
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std ;
+
+void print(vector<int>& v){
+for(int i = 0 ; i < v.size() ; i++){
+    cout << v[i] << " ";
+}
+cout << endl ;
+}
+
+void leftRotate(vector<int>& v){
+    for(int i = v.size()-1 ; i> 0 ; i--){
+        swap(v[i],v[i-1]);
+    }
+}
 
 int main(){
 
-int arr[10]={-1,2,-5,-5,3,6,-2,-4,10,12};
+vector<int>v = {1,4,5,7,8,5,9};
 
-// Optised approach
-int pos= 0 ;
-int neg = 1 ;
-int ans[10];
-for(int i = 0 ; i < 10 ; i++){
-    if(arr[i] > 0){
-        ans[pos] = arr[i];
-        pos+=2;
-    }
-    else{
-        ans[neg] = arr[i];
-        neg+=2;
-    }
-}
+// left rotate the vector
+cout<<"Before:-"<<endl ;
+print(v);
+leftRotate(v);
+cout<<"After:-"<<endl ;
+print(v) ;
 
-
-for(int i = 0 ; i < 10 ; i++){
-    cout<<ans[i]<<" ";
-}
-
-
-    return 0;
+    return 0 ;
 }

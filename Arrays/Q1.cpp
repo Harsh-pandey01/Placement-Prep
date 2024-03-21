@@ -1,33 +1,21 @@
-// Reverse an Array/String
+// LARGEST ELEMENT IN THE ARRAY
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std ;
 
 int main(){
 
-int size ;
-cout<<"Enter the size"<<endl ;
-cin >> size ;
-
-int arr[size] = {0};
-cout<<"Enter the elements of the array"<<endl ;
-for(int i = 0; i < size ; i++){
-    cin >> arr[i];
+int arr[] = {1,2,3,4,5,7,1,4,7,5,75,77,14};
+// using for loop
+int ans = INT_MIN ;
+for(int i = 0 ; i < sizeof(arr)/sizeof(int) ; i++){
+if(arr[i] > ans){
+    ans = arr[i];
 }
 
-int start = 0 ;
-int end = size-1 ;
-
-// Logic for the Reversing the array
-while(start < end){
-    swap(arr[start],arr[end]);
-    start++ ;
-    end-- ;
 }
 
-for(int i = 0; i < size ; i++){
-    cout<<arr[i]<<" ";
-}
+cout<<"The answer is "<<ans <<endl ;
 
 
     return 0 ;
