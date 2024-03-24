@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/HP/Desktop/Placement-Prep/Arrays/Easy",
-      "program": "c:/Users/HP/Desktop/Placement-Prep/Arrays/Easy/build/Debug/outDebug",
+      "cwd": "c:/Users/HP/Desktop/Placement-Prep/Arrays/Medium",
+      "program": "c:/Users/HP/Desktop/Placement-Prep/Arrays/Medium/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
